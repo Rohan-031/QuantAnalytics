@@ -1,0 +1,99 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL STYLES */
+html,
+body,
+[class*="css"] {
+    font-family: 'Outfit', sans-serif;
+    color: #E0E0E0;
+}
+
+/* Background */
+.stApp {
+    background: radial-gradient(circle at 10% 20%, #1a1a2e 0%, #16213e 90%);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: rgba(22, 33, 62, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* METRIC CARDS */
+div.css-1r6slb0.e1tzin5v2 {
+    /* Default Streamlit metric container targeting might need adjustment, using general selection */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Card Class (used with st.markdown) */
+.metric-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 255, 200, 0.3);
+}
+
+.metric-title {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CUSTOM ALERTS */
+.alert-box {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.alert-risk {
+    background: rgba(255, 75, 75, 0.15);
+    border: 1px solid #ff4b4b;
+    color: #ffadb0;
+}
+
+.alert-safe {
+    background: rgba(0, 200, 81, 0.15);
+    border: 1px solid #00c851;
+    color: #b0ffce;
+}
+
+/* Remove default chart margins for cleaner look */
+canvas {
+    border-radius: 8px;
+}
