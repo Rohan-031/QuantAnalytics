@@ -3,3 +3,4 @@ pandas
 websocket-client
 numpy
 watchdog
+statsmodels
