@@ -3,7 +3,10 @@
 import sqlite3
 from config.settings import DB_PATH
 
+import os
+
 def get_connection():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     return sqlite3.connect(DB_PATH, check_same_thread=False)
 
 def create_ticks_table():
